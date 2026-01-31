@@ -281,39 +281,13 @@ body {
 
 .skills-hero {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 70px;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-rows: repeat(2, auto);   /* 2 rows */
+  gap: 60px;
   max-width: 1200px;
   margin: auto;
   justify-items: center;
 }
-
-/* Center bottom row */
-.skill-float:nth-child(4),
-.skill-float:nth-child(5) {
-  grid-column: span 1;
-}
-
-/* Wrap bottom two in middle */
-.skill-float:nth-child(4) {
-  grid-column: 1 / 3;
-  justify-self: end;
-}
-
-.skill-float:nth-child(5) {
-  grid-column: 2 / 4;
-  justify-self: start;
-}
-
-
-@media (max-width: 768px) {
-  .skill-float:nth-child(4),
-  .skill-float:nth-child(5) {
-    grid-column: auto;
-    justify-self: center;
-  }
-}
-
 
 /* Each skill behaves like hero-image */
 .skill-float {
@@ -608,12 +582,17 @@ footer {
       <h6>AutoCAD 2D/3D</h6>
     </div>
 
+    <div class="skill-float">
+      <img src="images/cisco.png" alt="AutoCAD">
+      <h6>AutoCAD 2D/3D</h6>
+    </div>
+
   </div>
 </section>
 
 
 <!-- Projects -->
-<section id="tools" class="section-paddin text-white">
+<section id="projects" class="section-paddin text-white">
   <div class="container">
     <h2 class="text-center mb-4">Projects</h2>
     <div class="row g-4">
@@ -762,8 +741,29 @@ footer {
 <section id="contact" class="section-padding">
   <div class="container text-center">
     <h2 class="mb-4">Contact</h2>
-    <p>Email: <strong>your.email@example.com</strong></p>
-    <p>GitHub | LinkedIn | Portfolio</p>
+
+    <p>
+      Email:
+      <strong>
+        <a href="mailto:1-220480@asiatech.edu.ph" class="text-decoration-none text-light">
+          1-220480@asiatech.edu.ph
+        </a>
+      </strong>
+    </p>
+
+    <p>
+      <a href="https://github.com/jenielxd17" target="_blank" class="me-3 text-decoration-none text-light">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+
+      <a href="https://www.linkedin.com/in/jeniel-sabalboro-8079853a7" target="_blank" class="me-3 text-decoration-none text-light">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+
+      <a href="https://jenielxd17.github.io/Jenielxd17.io/index.html" target="_blank" class="text-decoration-none text-light">
+        <i class="fas fa-globe"></i> Portfolio
+      </a>
+    </p>
   </div>
 </section>
 
